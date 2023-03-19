@@ -5,8 +5,11 @@
       <map>
         <entry key="..\:/Users/parth/AndroidStudioProjects/Fragment/app/src/main/res/drawable/android_category_simple.xml" value="0.2265" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/Fragment/app/src/main/res/drawable/android_trivia.xml" value="0.2265" />
+        <entry key="..\:/Users/parth/AndroidStudioProjects/Fragment/app/src/main/res/drawable/try_again.xml" value="0.2265" />
+        <entry key="..\:/Users/parth/AndroidStudioProjects/Fragment/app/src/main/res/drawable/you_win.xml" value="0.2265" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/Fragment/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/parth/AndroidStudioProjects/Fragment/app/src/main/res/layout/fragment_game.xml" value="0.8800000000000001" />
+        <entry key="..\:/Users/parth/AndroidStudioProjects/Fragment/app/src/main/res/layout/fragment_game.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/parth/AndroidStudioProjects/Fragment/app/src/main/res/layout/fragment_game_won.xml" value="0.27462219906201146" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/Fragment/app/src/main/res/layout/fragment_title.xml" value="0.27447916666666666" />
       </map>
     </option>
