@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       // adding of the NavHostFragment in the activity main layout
+       <androidx.fragment.app.FragmentContainerView
+           android:id="@+id/NavHostFragment"
+           android:name="androidx.navigation.fragment.NavHostFragment"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           app:defaultNavHost="true"
+           app:navGraph="@navigation/navigation"
+       />
+
+       // here app:navGraph is used so that NavHostFragment know which navigation graph resource it have to use
+
+       // here app:defaultNavHost="true" means that this navigation host will intercept the system back key. we have
+       // to set this explicitly because we can have multiple simultaneously Nav hosts. And we want only one navHost to handle
+       // the back
+
+
+   </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</layout>
