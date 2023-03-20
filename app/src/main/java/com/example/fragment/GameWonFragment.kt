@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import com.example.fragment.databinding.FragmentGameWonBinding
 
 class GameWonFragment : Fragment() {
 
@@ -18,13 +19,13 @@ class GameWonFragment : Fragment() {
         val binding: FragmentGameWonBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_game_won, container, false)
         binding.nextMatchButton.setOnClickListener { view: View ->
-            view.findNavController().navigate(
-                GameWonFragmentDirections.actionGameWonFragmentToGameFragment())
+            //view.findNavController().navigate(
+                //GameWonFragmentDirections.actionGameWonFragmentToGameFragment())
         }
         setHasOptionsMenu(true)
         return binding.root
     }
-
+    /*
     private fun getShareIntent() : Intent {
         val args = GameWonFragmentArgs.fromBundle(requireArguments())
         return ShareCompat.IntentBuilder.from(activity!!)
@@ -53,5 +54,7 @@ class GameWonFragment : Fragment() {
         }
         return super.onOptionsItemSelected(item)
     }
+
+     */
 
 }
