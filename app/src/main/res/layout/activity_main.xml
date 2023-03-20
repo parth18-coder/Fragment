@@ -10,7 +10,7 @@
 
        // adding of the NavHostFragment in the activity main layout
        <androidx.fragment.app.FragmentContainerView
-           android:id="@+id/NavHostFragment"
+           android:id="@+id/myNavHostFragment"
            android:name="androidx.navigation.fragment.NavHostFragment"
            android:layout_width="match_parent"
            android:layout_height="match_parent"
