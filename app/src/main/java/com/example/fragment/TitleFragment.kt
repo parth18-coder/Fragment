@@ -51,7 +51,10 @@ class TitleFragment : Fragment() {
             functionality of the class without subclassing it. Ktx has extension functions for the android "View" Class
              */
 
-            view.findNavController().navigate(R.id.action_titleFragment_to_gameFragment)
+            view.findNavController().navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment())
+            // Here we can use this only if we are using anonymous function. 'this refer to:
+            // TitleFragmentDirections.actionTitleFragmentToGameFragment()
+            // other wise we have to use R.id.actionTitleFragmentToGameFragment in navigate()
 
 
             /*
