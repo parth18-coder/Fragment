@@ -3,7 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
-// plugin so that safe transfer of data b/w fragments(Navigation)
+// plugin so that safe transfer of data b/w fragments(Navigation)k
 apply plugin: 'androidx.navigation.safeargs'
 
 android {

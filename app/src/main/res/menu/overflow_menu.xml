@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    id of the item and id of AboutFragment destination in the navigation graph should
+    same.
+    This will tell the navigation which destination we want to navigate.
+    -->
+
+    <item
+        android:id="@+id/aboutFragment"
+        android:title="@string/about" />
+</menu>

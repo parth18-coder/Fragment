@@ -1,12 +1,11 @@
 package com.example.fragment
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
 import com.example.fragment.databinding.FragmentTitleBinding
 
 class TitleFragment : Fragment() {
@@ -67,7 +66,41 @@ class TitleFragment : Fragment() {
 
         }
 
+        /*
+        if put the overflow menu in the activity than it will appear every where in the app i.e in each fragment.
+        so we put it in titleFragment so that overflow menu will not appear in other fragments.
+        */
+
+        /*
+        this will tell the android that we are going to have menu associated with the titleFragment.
+        */
+
+        setHasOptionsMenu(true)
+
         return binding.root
     }
+
+    // Menu are created in this method
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater?.inflate(R.menu.overflow_menu,menu)
+    }
+
+    // this will be called when item is selected in the menu.
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return NavigationUI.onNavDestinationSelected(item, requireView().findNavController())
+                || super.onOptionsItemSelected(item)
+    }
+
+
+    /*
+    one important thing is that we have not created an action that connecting the title fragment and
+    about fragment.
+    Menu are often used to navigate from more than one destination, And there is no way to specify different
+    menu actions for each destination to navigate from
+
+    So when we use menus, we usually navigate to destinations rather than use actions.
+     */
 
 }
