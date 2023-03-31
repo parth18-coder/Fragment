@@ -41,7 +41,11 @@ android {
 dependencies {
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
+
+    //Navigation drawer is a part of the material library,a library used to implement the pattern
+    //that are part of google material design language.
     implementation 'com.google.android.material:material:1.8.0'
+
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
@@ -51,4 +55,8 @@ dependencies {
 
     implementation "androidx.navigation:navigation-fragment-ktx:$version_navigation"
     implementation "androidx.navigation:navigation-ui-ktx:$version_navigation"
+
+    //Navigation drawer is a part of the material library,a library used to implement the pattern
+    //that are part of google material design language.
+    //implementation "com.google.android.material:material:$version_material"
 }
